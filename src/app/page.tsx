@@ -6,28 +6,30 @@ export default function Home() {
       {/* Navbar */}
       <header className="fixed top-0 w-full bg-white">
         <nav className=" flex justify-between items-center bg-white px-16 py-7">
-          <h1 className="text-teal-500 text-3xl">Dhion Nur Damanhuri</h1>
-          <ul className="flex items-center gap-x-8">
+          <h1 className="text-teal-500 text-3xl font-bold">
+            Dhion Nur Damanhuri
+          </h1>
+          <ul className="flex items-center gap-x-8 ">
             <li>
               <a
                 href="#home"
-                className="text-gray-700 hover:text-white hover:bg-teal-500 py-2 px-4 hover:rounded-xl"
+                className="text-teal-500 hover:text-white hover:bg-teal-500 py-2 px-4 hover:rounded-xl"
               >
                 HOME
               </a>
             </li>
             <li>
-              <a href="#about" className="text-gray-700 hover:text-teal-500">
+              <a href="#about" className="text-teal-500 hover:text-teal-500">
                 ABOUT
               </a>
             </li>
             <li>
-              <a href="#work" className="text-gray-700 hover:text-teal-500">
+              <a href="#work" className="text-teal-500 hover:text-teal-500">
                 WORK
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-gray-700 hover:text-teal-500">
+              <a href="#contact" className="text-teal-500 hover:text-teal-500">
                 CONTACT
               </a>
             </li>
@@ -47,7 +49,6 @@ export default function Home() {
       <section className="aboutMe text-teal-500 h-screen flex items-center">
         <div className="w-full px-16 flex justify-between">
           <h2 className="w-1/5 text-5xl font-bold">About Me.</h2>
-
           <div className="content w-3/5 flex flex-col gap-y-6 text-3xl">
             <p>
               Hi! I’m a UI/UX Designer and Frontend Developer who’s passionate
@@ -67,6 +68,17 @@ export default function Home() {
       </section>
 
       {/* Works Section */}
+      <section className="works text-teal-500">
+        <div className="content px-16 flex justify-between">
+          <h2 className="text-5xl font-bold">Recent Works.</h2>
+          <p className="text-3xl">
+            A selection of my recent projects — combining intuitive design with
+            clean, responsive code.
+          </p>
+        </div>
+
+        <div className="recentWorks"></div>
+      </section>
     </main>
   );
 }
