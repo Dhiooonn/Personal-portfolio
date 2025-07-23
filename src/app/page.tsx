@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       {/* Navbar */}
       <header className="fixed top-0 w-full bg-white">
-        <nav className=" flex justify-between items-center bg-white px-16 py-7 ">
+        <nav className=" flex justify-between items-center bg-white px-16 py-7">
           <h1 className="text-teal-500 text-3xl">Dhion Nur Damanhuri</h1>
           <ul className="flex items-center gap-x-8">
             <li>
@@ -43,10 +43,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Me */}
-      <section className="aboutMe">
-        
+      {/* About Me Section */}
+      <section className="aboutMe text-teal-500 h-screen flex items-center">
+        <div className="w-full px-16 flex justify-between">
+          <h2 className="w-1/5 text-5xl font-bold">About Me.</h2>
+
+          <div className="content w-3/5 flex flex-col gap-y-6 text-3xl">
+            <p>
+              Hi! I’m a UI/UX Designer and Frontend Developer who’s passionate
+              about crafting seamless digital experiences. I blend creativity
+              and logic to design user-centered interfaces, then bring them to
+              life through clean, responsive code.
+            </p>
+            <p>
+              With a strong eye for detail and a love for solving problems, I
+              enjoy turning complex ideas into simple, intuitive designs.
+              Whether it's wireframing in Figma or coding in React, I always aim
+              to create products that are not only beautiful, but also
+              meaningful. Let’s create something impactful together.
+            </p>
+          </div>
+        </div>
       </section>
+
+      {/* Works Section */}
     </main>
   );
 }
