@@ -113,16 +113,16 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-800 px-16 py-24 flex flex-col gap-y-16">
         <div className="content-footer flex flex-col gap-y-12 w-6xl">
-          <h2 className="font-bold font-white text-5xl w-[750px] font-fredoka">
+          <h2 className="font-bold font-white text-5xl w-[750px] font-fredoka text-white">
             Interested in working together? Let’s connect
           </h2>
-          <p className="text-3xl font-light font-poppins">
+          <p className="text-3xl font-light font-poppins text-white">
             I’m open to freelance opportunities, collaborations, or just a
             friendly chat about design and development. Whether you have a
             project in mind or just want to say hi, feel free to reach out — I’d
             love to hear from you.
           </p>
-          <h2 className="font-bold font-white text-5xl font-fredoka">
+          <h2 className="font-bold font-white text-5xl font-fredoka text-white">
             diondaman51@gmail.com
           </h2>
         </div>
