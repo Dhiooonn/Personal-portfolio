@@ -50,7 +50,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section w-full px-4 sm:px-8 md:px-16 flex justify-center items-center h-screen">
         <div className="text-center text-teal-500">
-          <h1 className="sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl font-bold font-fredoka">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-9xl font-bold font-fredoka">
             DHION NUR DAMANHURI
           </h1>
           <p className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-poppins">
@@ -60,10 +60,12 @@ export default function Home() {
       </section>
 
       {/* About Me Section */}
-      <section className="aboutMe text-teal-500 h-screen flex items-center">
-        <div className="w-full px-16 flex justify-between">
-          <h2 className="w-1/5 text-5xl font-bold font-fredoka">About Me.</h2>
-          <div className="content w-3/5 flex flex-col gap-y-6 text-3xl font-poppins">
+      <section className="aboutMe text-teal-500 min-h-screen flex items-center py-16">
+        <div className="w-full px-4 sm:px-8 md:px-16 flex flex-col md:flex-row md:justify-between gap-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-fredoka md:w-1/5 text-center md:text-left">
+            About Me.
+          </h2>
+          <div className="content flex flex-col gap-y-6 text-base sm:text-lg md:text-2xl lg:text-3xl font-poppins md:w-3/5">
             <p>
               Hi! I’m a UI/UX Designer and Frontend Developer who’s passionate
               about crafting seamless digital experiences. I blend creativity
