@@ -7,30 +7,39 @@ export default function Home() {
       {/* Navbar */}
       <header className="fixed top-0 w-full bg-white">
         <nav className=" flex justify-between items-center bg-white px-16 py-7">
-          <h1 className="text-teal-500 text-3xl font-bold">
+          <h1 className="text-teal-500 text-3xl font-bold font-fredoka">
             Dhion Nur Damanhuri
           </h1>
-          <ul className="flex items-center gap-x-8 ">
+          <ul className="flex items-center gap-x-8">
             <li>
               <a
                 href="#home"
-                className="text-teal-500 hover:text-white hover:bg-teal-500 py-2 px-4 hover:rounded-xl"
+                className="font-fredoka font-bold text-teal-500 hover:text-white hover:bg-teal-500 py-2 px-4 hover:rounded-xl"
               >
                 HOME
               </a>
             </li>
             <li>
-              <a href="#about" className="text-teal-500 hover:text-teal-500">
+              <a
+                href="#about"
+                className="font-fredoka font-bold text-teal-500 hover:text-teal-500"
+              >
                 ABOUT
               </a>
             </li>
             <li>
-              <a href="#work" className="text-teal-500 hover:text-teal-500">
+              <a
+                href="#work"
+                className="font-fredoka font-bold text-teal-500 hover:text-teal-500"
+              >
                 WORK
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-teal-500 hover:text-teal-500">
+              <a
+                href="#contact"
+                className="font-fredoka font-bold text-teal-500 hover:text-teal-500"
+              >
                 CONTACT
               </a>
             </li>
@@ -41,16 +50,20 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section w-full px-16 flex justify-center items-center h-screen">
         <div className="text-center text-teal-500">
-          <h1 className="text-9xl font-bold">DHION NUR DAMANHURI</h1>
-          <p className="text-4xl">UI/UX DESIGNER & FRONTEND DEVELOPER</p>
+          <h1 className="text-9xl font-bold font-fredoka">
+            DHION NUR DAMANHURI
+          </h1>
+          <p className="text-4xl font-poppins">
+            UI/UX DESIGNER & FRONTEND DEVELOPER
+          </p>
         </div>
       </section>
 
       {/* About Me Section */}
       <section className="aboutMe text-teal-500 h-screen flex items-center">
         <div className="w-full px-16 flex justify-between">
-          <h2 className="w-1/5 text-5xl font-bold">About Me.</h2>
-          <div className="content w-3/5 flex flex-col gap-y-6 text-3xl">
+          <h2 className="w-1/5 text-5xl font-bold font-fredoka">About Me.</h2>
+          <div className="content w-3/5 flex flex-col gap-y-6 text-3xl font-poppins">
             <p>
               Hi! I’m a UI/UX Designer and Frontend Developer who’s passionate
               about crafting seamless digital experiences. I blend creativity
@@ -72,8 +85,10 @@ export default function Home() {
       <section className="works text-teal-500 flex flex-col gap-y-14 py-80">
         {/* content deskrision */}
         <div className="content px-16 flex justify-between">
-          <h2 className="w-2/5 text-5xl font-bold">Recent Works.</h2>
-          <p className="w-3/5 text-3xl">
+          <h2 className="w-2/5 text-5xl font-bold font-fredoka">
+            Recent Works.
+          </h2>
+          <p className="w-3/5 text-3xl font-poppins">
             A selection of my recent projects — combining intuitive design with
             clean, responsive code.
           </p>
@@ -98,16 +113,16 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-800 px-16 py-24 flex flex-col gap-y-16">
         <div className="content-footer flex flex-col gap-y-12 w-6xl">
-          <h2 className="font-bold font-white text-5xl w-[750px]">
+          <h2 className="font-bold font-white text-5xl w-[750px] font-fredoka">
             Interested in working together? Let’s connect
           </h2>
-          <p className="text-3xl font-light">
+          <p className="text-3xl font-light font-poppins">
             I'm open to freelance opportunities, collaborations, or just a
             friendly chat about design and development. Whether you have a
             project in mind or just want to say hi, feel free to reach out — I’d
             love to hear from you.
           </p>
-          <h2 className="font-bold font-white text-5xl">
+          <h2 className="font-bold font-white text-5xl font-fredoka">
             diondaman51@gmail.com
           </h2>
         </div>

@@ -6,7 +6,7 @@ export default function Icons() {
       {/* Github icons */}
       <div className="bg-white p-4 rounded-full">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Dhiooonn"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -17,7 +17,7 @@ export default function Icons() {
       {/* LinkedIn icons */}
       <div className="bg-white p-4 rounded-full">
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/dhion-nur-damanhuri-2bb863275/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -28,7 +28,7 @@ export default function Icons() {
       {/* Instagram Icons */}
       <div className="bg-white p-4 rounded-full">
         <a
-          href="https://instagram.com/yourusername"
+          href="https://www.instagram.com/dhioonnn/"
           target="_blank"
           rel="noopener noreferrer"
         >
