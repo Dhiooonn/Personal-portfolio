@@ -73,7 +73,7 @@ export default function Home() {
             <p>
               With a strong eye for detail and a love for solving problems, I
               enjoy turning complex ideas into simple, intuitive designs.
-              Whether it's wireframing in Figma or coding in React, I always aim
+              Whether it’s wireframing in Figma or coding in React, I always aim
               to create products that are not only beautiful, but also
               meaningful. Let’s create something impactful together.
             </p>
@@ -117,7 +117,7 @@ export default function Home() {
             Interested in working together? Let’s connect
           </h2>
           <p className="text-3xl font-light font-poppins">
-            I'm open to freelance opportunities, collaborations, or just a
+            I’m open to freelance opportunities, collaborations, or just a
             friendly chat about design and development. Whether you have a
             project in mind or just want to say hi, feel free to reach out — I’d
             love to hear from you.
