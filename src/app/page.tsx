@@ -48,12 +48,12 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-section w-full px-16 flex justify-center items-center h-screen">
+      <section className="hero-section w-full px-16 md:px-12 flex justify-center items-center h-screen">
         <div className="text-center text-teal-500">
-          <h1 className="text-9xl font-bold font-fredoka">
+          <h1 className="text-4xl md:text-6xl lg:text-8px xl:text-9xl font-bold font-fredoka">
             DHION NUR DAMANHURI
           </h1>
-          <p className="text-4xl font-poppins">
+          <p className="text-lg md:text-2xl lg:text-4xl font-poppins">
             UI/UX DESIGNER & FRONTEND DEVELOPER
           </p>
         </div>
