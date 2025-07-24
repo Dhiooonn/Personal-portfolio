@@ -48,12 +48,12 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-section w-full px-16 md:px-12 flex justify-center items-center h-screen">
+      <section className="hero-section w-full px-16 flex justify-center items-center h-screen">
         <div className="text-center text-teal-500">
-          <h1 className="text-4xl md:text-6xl lg:text-8px xl:text-9xl font-bold font-fredoka">
+          <h1 className="text-9xl font-bold font-fredoka">
             DHION NUR DAMANHURI
           </h1>
-          <p className="text-lg md:text-2xl lg:text-4xl font-poppins">
+          <p className="text-4xl font-poppins">
             UI/UX DESIGNER & FRONTEND DEVELOPER
           </p>
         </div>
@@ -113,16 +113,16 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-800 px-16 py-24 flex flex-col gap-y-16">
         <div className="content-footer flex flex-col gap-y-12 w-6xl">
-          <h2 className="font-bold font-white text-5xl w-[750px] font-fredoka text-white">
+          <h2 className="font-bold font-white text-5xl w-[750px] font-fredoka">
             Interested in working together? Let’s connect
           </h2>
-          <p className="text-3xl font-light font-poppins text-white">
+          <p className="text-3xl font-light font-poppins">
             I’m open to freelance opportunities, collaborations, or just a
             friendly chat about design and development. Whether you have a
             project in mind or just want to say hi, feel free to reach out — I’d
             love to hear from you.
           </p>
-          <h2 className="font-bold font-white text-5xl font-fredoka text-white">
+          <h2 className="font-bold font-white text-5xl font-fredoka">
             diondaman51@gmail.com
           </h2>
         </div>
