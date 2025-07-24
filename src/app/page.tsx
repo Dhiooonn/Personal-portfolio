@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Icons from "@/app/components/icons"; // icons
 
 export default function Home() {
   return (
@@ -68,17 +69,53 @@ export default function Home() {
       </section>
 
       {/* Works Section */}
-      <section className="works text-teal-500">
+      <section className="works text-teal-500 flex flex-col gap-y-14 py-80">
+        {/* content deskrision */}
         <div className="content px-16 flex justify-between">
-          <h2 className="text-5xl font-bold">Recent Works.</h2>
-          <p className="text-3xl">
+          <h2 className="w-2/5 text-5xl font-bold">Recent Works.</h2>
+          <p className="w-3/5 text-3xl">
             A selection of my recent projects — combining intuitive design with
             clean, responsive code.
           </p>
         </div>
 
-        <div className="recentWorks"></div>
+        {/* Project Showcase */}
+        <div className="projectShowcase px-16">
+          <div className="grid grid-cols-3 gap-6">
+            {/* Left */}
+            <div className="col-span-2">
+              <div className="w-full h-[754px] bg-red-400 bg-[url('/images/Mockup.webp')] bg-cover bg-center rounded-2xl"></div>
+            </div>
+            {/* Right */}
+            <div className="flex flex-col gap-6">
+              <div className="w-full h-[365px] bg-red-400 bg-[url('/images/Mockup.webp')] bg-cover bg-center rounded-2xl"></div>
+              <div className="w-full h-[365px] bg-red-400 bg-[url('/images/Mockup.webp')] bg-cover bg-center rounded-2xl"></div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 px-16 py-24 flex flex-col gap-y-16">
+        <div className="content-footer flex flex-col gap-y-12 w-6xl">
+          <h2 className="font-bold font-white text-5xl w-[750px]">
+            Interested in working together? Let’s connect
+          </h2>
+          <p className="text-3xl font-light">
+            I'm open to freelance opportunities, collaborations, or just a
+            friendly chat about design and development. Whether you have a
+            project in mind or just want to say hi, feel free to reach out — I’d
+            love to hear from you.
+          </p>
+          <h2 className="font-bold font-white text-5xl">
+            diondaman51@gmail.com
+          </h2>
+        </div>
+
+        <div className="social-icons">
+          <Icons />
+        </div>
+      </footer>
     </main>
   );
 }
