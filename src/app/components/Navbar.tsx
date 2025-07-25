@@ -1,37 +1,32 @@
 "use client";
 
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
+
+const menuItems = ["Home", "About", "Work", "Contact"];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  const navItems = [
-    { href: "#home", label: "HOME" },
-    { href: "#about", label: "ABOUT" },
-    { href: "#work", label: "WORK" },
-    { href: "#contact", label: "CONTACT" },
-  ];
-
   return (
-    <header className="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
-      <nav className="flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-16 py-6">
-        <h1 className="font-fredoka font-bold text-teal-500 text-xl sm:tet-2xl d:text-3xl">
+    <header className="fixed w-full px-4 py-4 lg:px-16 bg-white shadow-md">
+      <nav className="flex justify-between items-center">
+        <h1 className="font-fredoka font-bold text-teal-500 text-xl">
           Dhion Nur Damanhuri
         </h1>
 
-        {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8">
-          {navItems.map(({ href, label }) => (
-            <li key={href}>
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex gap-6 text-teal-500 font-bold">
+          {menuItems.map((label) => (
+            <li key={label}>
               <Link
-                rel="stylesheet"
-                href={href}
-                onClick={closeMenu}
-                className="font-fredoka font-bold text-teal-500 hover:text-white hover:bg-teal-500 py-2 px-4 rounded-2xl transition-all  duration-300"
+                href={`#${label.toLowerCase()}`}
+                className="font-fredoka hover:text-white hover:bg-teal-500 px-4 py-2 rounded-xl transition-all duration-300"
               >
                 {label}
               </Link>
@@ -39,35 +34,46 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Humberger Menu */}
-        <button
-          className="md:hidden text-teal-500 text-3xl"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <FiX /> : <FiMenu />}
-        </button>
+        {/* Mobile Toggle Icon */}
+        <div className="lg:hidden">
+          {isOpen ? (
+            <XMarkIcon
+              className="w-8 h-8 text-teal-500 cursor-pointer transition duration-300 hover:rotate-90"
+              onClick={toggleMenu}
+            />
+          ) : (
+            <Bars3Icon
+              className="w-8 h-8 text-teal-500 cursor-pointer transition duration-300 hover:scale-110"
+              onClick={toggleMenu}
+            />
+          )}
+        </div>
       </nav>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white px-6 pb-6 shadow-md">
-          <ul className="flex flex-col gap-4">
-            {navItems.map(({ href, label }) => (
-              <li key={href}>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.ul
+            className="absolute z-50 top-full left-0 w-full bg-white shadow-lg rounded-b-2xl flex flex-col gap-3 lg:hidden px-4 py-4"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+          >
+            {menuItems.map((label) => (
+              <li key={label}>
                 <Link
-                  rel="stylesheet"
-                  href={href}
+                  href={`#${label.toLowerCase()}`}
                   onClick={closeMenu}
-                  className="block w-full font-fredoka font-bold text-teal-500 hover:text-white hover:bg-teal-500 py-2 px-4 rounded-2xl transition-all duration-300"
+                  className="block w-full text-teal-500 font-bold font-fredoka hover:text-white hover:bg-teal-500 px-4 py-2 rounded-xl transition-all duration-300"
                 >
                   {label}
                 </Link>
               </li>
             ))}
-          </ul>
-        </div>
-      )}
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

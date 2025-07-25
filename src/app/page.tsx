@@ -6,52 +6,11 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-
-      {/* Navbar */}
-      {/* <header className="fixed top-0 w-full bg-white">
-        <nav className=" flex justify-between items-center bg-white px-16 py-7">
-          <h1 className="text-teal-500 text-3xl  font-bold font-fredoka">
-            Dhion Nur Damanhuri
-          </h1>
-          <ul className="flex items-center gap-x-8">
-            <li>
-              <a
-                href="#home"
-                className="font-fredoka font-bold text-teal-500 hover:text-white hover:bg-teal-500 py-2 px-4 hover:rounded-xl"
-              >
-                HOME
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="font-fredoka font-bold text-teal-500 hover:text-teal-500"
-              >
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a
-                href="#work"
-                className="font-fredoka font-bold text-teal-500 hover:text-teal-500"
-              >
-                WORK
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="font-fredoka font-bold text-teal-500 hover:text-teal-500"
-              >
-                CONTACT
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header> */}
-
       {/* Hero Section */}
-      <section className="hero-section w-full px-4 sm:px-8 md:px-16 flex justify-center items-center h-screen">
+      <section
+        id="home"
+        className="hero-section w-full px-4 sm:px-8 md:px-16 flex justify-center items-center h-screen"
+      >
         <div className="text-center text-teal-500">
           <h1 className="text-6xl lg:text-7xl xl:text-9xl font-bold font-fredoka">
             DHION NUR DAMANHURI
@@ -63,7 +22,10 @@ export default function Home() {
       </section>
 
       {/* About Me Section */}
-      <section className="aboutMe text-teal-500 min-h-screen flex items-center py-16">
+      <section
+        id="about"
+        className="#aboutMe text-teal-500 min-h-screen flex items-center py-16"
+      >
         <div className="w-full px-4 md:px-16 flex flex-col md:flex-row md:justify-between gap-8">
           <h2 className="text-3xl lg:text-5xl font-bold font-fredoka md:w-1/5 text-center md:text-left">
             About Me.
@@ -87,7 +49,10 @@ export default function Home() {
       </section>
 
       {/* Works Section */}
-      <section className="works text-teal-500 flex flex-col gap-y-14 py-80 px-4 lg:px-16">
+      <section
+        id="work"
+        className="text-teal-500 flex flex-col gap-y-14 py-80 px-4 lg:px-16"
+      >
         {/* content deskrision */}
         <div className="content flex flex-col lg:flex-row lg:justify-between items-center gap-8">
           <h2 className="lg:w-2/5 text-3xl lg:text-5xl font-bold font-fredoka md:w-1/5 text-center md:text-left">
@@ -116,7 +81,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 px-4 lg:px-16 py-24 flex flex-col gap-y-12 lg:gap-y-16">
+      <footer
+        id="contact"
+        className="bg-gray-800 px-4 lg:px-16 py-24 flex flex-col gap-y-12 lg:gap-y-16"
+      >
         <div className="content-footer flex flex-col gap-y-8 lg:gap-y-12 lg:w-6xl">
           <h2 className="font-fredoka font-bold font-white text-2xl lg:text-5xl lg:w-[750px]">
             Interested in working together? Let’s connect
