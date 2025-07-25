@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Icons from "@/app/components/icons"; // icons
+import Navbar from "@/app/components/Navbar"; // Navbar
 
 export default function Home() {
   return (
     <main>
+      <Navbar />
+
       {/* Navbar */}
       {/* <header className="fixed top-0 w-full bg-white">
         <nav className=" flex justify-between items-center bg-white px-16 py-7">
