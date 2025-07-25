@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Icons() {
   return (
-    <div className="flex gap-5 text-3xl">
+    <div className="flex gap-4 lg:gap-5 text-2xl lg:text-3xl">
       {/* Github icons */}
       <div className="bg-white p-4 rounded-full">
         <a

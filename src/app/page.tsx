@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main>
       {/* Navbar */}
-      <header className="fixed top-0 w-full bg-white">
+      {/* <header className="fixed top-0 w-full bg-white">
         <nav className=" flex justify-between items-center bg-white px-16 py-7">
-          <h1 className="text-teal-500 text-3xl font-bold font-fredoka">
+          <h1 className="text-teal-500 text-3xl  font-bold font-fredoka">
             Dhion Nur Damanhuri
           </h1>
           <ul className="flex items-center gap-x-8">
@@ -45,15 +45,15 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
 
       {/* Hero Section */}
       <section className="hero-section w-full px-4 sm:px-8 md:px-16 flex justify-center items-center h-screen">
         <div className="text-center text-teal-500">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-9xl font-bold font-fredoka">
+          <h1 className="text-6xl lg:text-7xl xl:text-9xl font-bold font-fredoka">
             DHION NUR DAMANHURI
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-poppins">
+          <p className="text-lg md:text-2xl lg:text-3xl xl:text-4xl font-poppins">
             UI/UX DESIGNER & FRONTEND DEVELOPER
           </p>
         </div>
@@ -61,11 +61,11 @@ export default function Home() {
 
       {/* About Me Section */}
       <section className="aboutMe text-teal-500 min-h-screen flex items-center py-16">
-        <div className="w-full px-4 sm:px-8 md:px-16 flex flex-col md:flex-row md:justify-between gap-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-fredoka md:w-1/5 text-center md:text-left">
+        <div className="w-full px-4 md:px-16 flex flex-col md:flex-row md:justify-between gap-8">
+          <h2 className="text-3xl lg:text-5xl font-bold font-fredoka md:w-1/5 text-center md:text-left">
             About Me.
           </h2>
-          <div className="content flex flex-col gap-y-6 text-base sm:text-lg md:text-2xl lg:text-3xl font-poppins md:w-3/5">
+          <div className="content flex flex-col gap-y-6 text-center lg:text-start text-lg md:text-2xl lg:text-3xl font-poppins md:w-3/5">
             <p>
               Hi! I’m a UI/UX Designer and Frontend Developer who’s passionate
               about crafting seamless digital experiences. I blend creativity
@@ -84,21 +84,21 @@ export default function Home() {
       </section>
 
       {/* Works Section */}
-      <section className="works text-teal-500 flex flex-col gap-y-14 py-80">
+      <section className="works text-teal-500 flex flex-col gap-y-14 py-80 px-4 lg:px-16">
         {/* content deskrision */}
-        <div className="content px-16 flex justify-between">
-          <h2 className="w-2/5 text-5xl font-bold font-fredoka">
+        <div className="content flex flex-col lg:flex-row lg:justify-between items-center gap-8">
+          <h2 className="lg:w-2/5 text-3xl lg:text-5xl font-bold font-fredoka md:w-1/5 text-center md:text-left">
             Recent Works.
           </h2>
-          <p className="w-3/5 text-3xl font-poppins">
-            A selection of my recent projects — combining intuitive design with
+          <p className="lg:w-3/5 text-lg text-center lg:text-start md:text-2xl lg:text-3xl font-poppins">
+            A selection of my recent projects combining intuitive design with
             clean, responsive code.
           </p>
         </div>
 
         {/* Project Showcase */}
-        <div className="projectShowcase px-16">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="projectShowcase">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-6">
             {/* Left */}
             <div className="col-span-2">
               <div className="w-full h-[754px] bg-red-400 bg-[url('/images/Mockup.webp')] bg-cover bg-center rounded-2xl"></div>
@@ -113,18 +113,18 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 px-16 py-24 flex flex-col gap-y-16">
-        <div className="content-footer flex flex-col gap-y-12 w-6xl">
-          <h2 className="font-bold font-white text-5xl w-[750px] font-fredoka">
+      <footer className="bg-gray-800 px-4 lg:px-16 py-24 flex flex-col gap-y-12 lg:gap-y-16">
+        <div className="content-footer flex flex-col gap-y-8 lg:gap-y-12 lg:w-6xl">
+          <h2 className="font-fredoka font-bold font-white text-2xl lg:text-5xl lg:w-[750px]">
             Interested in working together? Let’s connect
           </h2>
-          <p className="text-3xl font-light font-poppins">
+          <p className="text-lg lg:text-3xl font-light font-poppins">
             I’m open to freelance opportunities, collaborations, or just a
             friendly chat about design and development. Whether you have a
             project in mind or just want to say hi, feel free to reach out — I’d
             love to hear from you.
           </p>
-          <h2 className="font-bold font-white text-5xl font-fredoka">
+          <h2 className="font-fredoka font-bold font-white text-2xl lg:text-5xl">
             diondaman51@gmail.com
           </h2>
         </div>
