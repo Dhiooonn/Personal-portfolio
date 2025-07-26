@@ -1,51 +1,42 @@
+"use client";
+
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Icons() {
+  const icons = [
+    {
+      href: "https://github.com/Dhiooonn",
+      icon: <FaGithub />,
+    },
+    {
+      href: "https://www.linkedin.com/in/dhion-nur-damanhuri-2bb863275",
+      icon: <FaLinkedin />,
+    },
+    {
+      href: "https://www.instagram.com/dhioonnn",
+      icon: <FaInstagram />,
+    },
+    {
+      href: "https://wa.me/62895422528428",
+      icon: <FaWhatsapp />,
+    },
+  ];
+
   return (
     <div className="flex gap-4 lg:gap-5 text-2xl lg:text-3xl">
-      {/* Github icons */}
-      <div className="bg-white p-4 rounded-full">
-        <a
-          href="https://github.com/Dhiooonn"
-          target="_blank"
-          rel="noopener noreferrer"
+      {icons.map(({ href, icon }, index) => (
+        <motion.div
+          key={index}
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="bg-white p-4 rounded-full shadow-md"
         >
-          <FaGithub className="text-gray-900" />
-        </a>
-      </div>
-
-      {/* LinkedIn icons */}
-      <div className="bg-white p-4 rounded-full">
-        <a
-          href="https://www.linkedin.com/in/dhion-nur-damanhuri-2bb863275/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin className="text-gray-900" />
-        </a>
-      </div>
-
-      {/* Instagram Icons */}
-      <div className="bg-white p-4 rounded-full">
-        <a
-          href="https://www.instagram.com/dhioonnn/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram className="text-gray-900" />
-        </a>
-      </div>
-
-      {/* WhatsApp Icons */}
-      <div className="bg-white p-4 rounded-full">
-        <a
-          href="https://instagram.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp className="text-gray-900" />
-        </a>
-      </div>
+          <a href={href} target="_blank" className="text-gray-900">
+            {icon}
+          </a>
+        </motion.div>
+      ))}
     </div>
   );
 }

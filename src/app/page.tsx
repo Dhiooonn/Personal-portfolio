@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Icons from "@/app/components/icons"; // icons
 import Navbar from "@/app/components/Navbar"; // Navbar
+import Butterfly from "@/app/components/customerService";
 
 export default function Home() {
   return (
     <main>
+      {/* Kupu-Kupu */}
       <Navbar />
+      <Butterfly />
       {/* Hero Section */}
       <section
         id="home"
@@ -20,7 +23,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* About Me Section */}
       <section
         id="about"
@@ -47,11 +49,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Works Section */}
       <section
         id="work"
-        className="text-teal-500 flex flex-col gap-y-14 py-80 px-4 lg:px-16"
+        className="text-teal-500 flex flex-col gap-y-14 my-50 px-4 lg:px-16"
       >
         {/* content deskrision */}
         <div className="content flex flex-col lg:flex-row lg:justify-between items-center gap-8">
@@ -79,7 +80,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer
         id="contact"
