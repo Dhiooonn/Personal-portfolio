@@ -6,7 +6,6 @@ import Butterfly from "@/app/components/customerService";
 export default function Home() {
   return (
     <main>
-      {/* Kupu-Kupu */}
       <Navbar />
       <Butterfly />
       {/* Hero Section */}
