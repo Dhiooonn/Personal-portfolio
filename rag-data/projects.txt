@@ -1,0 +1,14 @@
+1. Butterfly AI (Customer Service Bot)
+   Sebuah fitur customer service berbentuk animasi kupu-kupu yang terintegrasi dengan AI, mampu menjawab pertanyaan user secara interaktif dan personal. Dibangun dengan Lottie, Next.js, dan Framer Motion.
+
+2. Karimunjawa App
+   Aplikasi travel yang memberikan informasi seputar destinasi wisata Karimunjawa. Dibuat dengan pendekatan mobile-first UI dan berfokus pada kemudahan pengguna dalam merencanakan perjalanan.
+
+3. Teman Isyarat
+   Aplikasi berbasis AI untuk menerjemahkan bahasa isyarat BISINDO ke teks atau suara. Menggunakan teknologi kamera dan machine learning untuk meningkatkan komunikasi antara tunarungu dan orang awam. Proyek ini berkontribusi pada SDG 10: Reduced Inequalities.
+
+4. WartegBot
+   Chatbot Telegram yang dikembangkan menggunakan Java dan MySQL. Dapat menjawab pertanyaan pengguna berdasarkan kata kunci dengan sistem CRUD berbasis GUI.
+
+5. Website Portofolio
+   Dibuat menggunakan Next.js dan Tailwind CSS. Mempunyai layout responsif dan animasi halus, serta mencerminkan identitas personal sebagai desainer dan developer.

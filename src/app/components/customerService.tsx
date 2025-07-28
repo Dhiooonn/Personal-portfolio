@@ -30,21 +30,22 @@ export default function ButterflyCS() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const sendMessage = () => {
-    if (!input.trim()) return;
+  const sendMessage = async () => {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ message: input }),
+    });
 
-    const userMessage = { from: "user", text: input };
-    setMessages((prev) => [...prev, userMessage]);
-    setInput("");
-
-    const aiResponse = {
-      from: "bot",
-      text: `Saya mengerti. Kamu bilang: "${userMessage.text}"`,
-    };
-
-    setTimeout(() => {
-      setMessages((prev) => [...prev, aiResponse]);
-    }, 1200);
+    const data = await response.json();
+    setMessages((prev) => [
+  ...prev,
+  { from: "user", text: input },
+  { from: "bot", text: data.reply },
+]);
+setInput(""); // Bersihkan input
   };
 
   return (
@@ -103,7 +104,7 @@ export default function ButterflyCS() {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Input & Kirim */}
+            {/* Input & btn Kirim */}
             <div className="flex gap-1 mt-2">
               <input
                 type="text"
@@ -111,7 +112,7 @@ export default function ButterflyCS() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && sendMessage()}
                 placeholder="Tulis pesan..."
-                className="flex-1 text-xs px-2 py-1 border rounded-md"
+                className="flex-1 text-xs px-2 py-1 border rounded-md placeholder:text-gray-500"
               />
               <button
                 onClick={sendMessage}
