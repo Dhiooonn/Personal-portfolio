@@ -1,37 +1,20 @@
-// app/api/chat/route.ts
 import { NextRequest, NextResponse } from "next/server";
+import { getGeminiReply } from "../../utils/gemini";
 
 export async function POST(req: NextRequest) {
   const { message } = await req.json();
 
-  const response = await fetch(
-    "https://api.groq.com/openai/v1/chat/completions",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "meta-llama/llama-4-scout-17b-16e-instruct", // ganti dengan model yang valid
-        messages: [
-          { role: "system", content: "You are a helpful assistant." },
-          { role: "user", content: message },
-        ],
-      }),
-    }
-  );
+  try {
+    const reply = await getGeminiReply(message);
+    return NextResponse.json({ reply });
+  } catch (err: unknown) {
+    console.log("gemini error: ", err);
 
-  const data = await response.json();
+    const errorMessage =
+      err instanceof Error
+        ? err.message
+        : String(err) || "Gagal mengambil respons dari Gemni";
 
-  if (!response.ok) {
-    return NextResponse.json(
-      { error: data.error?.message || "Gagal mengambil response dari Groq." },
-      { status: response.status }
-    );
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
-
-  const reply =
-    data.choices?.[0]?.message?.content || "Maaf, saya tidak bisa menjawab.";
-  return NextResponse.json({ reply });
 }
