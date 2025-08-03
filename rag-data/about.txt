@@ -1,6 +1,17 @@
-Saya adalah Dhion Damanhuri, seorang UI/UX Designer dan Web Developer dari Indonesia. Saya memiliki pengalaman dalam membangun antarmuka yang intuitif dan estetis, serta mengembangkan website menggunakan teknologi modern seperti Next.js, react.js, Tailwind CSS, dan Astro.
+About Me
 
-Beberapa karya saya berfokus pada pengembangan produk digital yang inklusif dan bermanfaat, seperti aplikasi aksesibilitas untuk penyandang disabilitas dan sistem chatbot berbasis AI. Saya juga memiliki minat dalam pengembangan teknologi edukasi dan AI yang membantu interaksi manusia-komputer menjadi lebih alami.
+Halo! Perkanlkan saya Dhion Nur Damanhuri, seorang UI/UX Designer dan Frontend Developer yang berdomisili di Indonesia. Saya memiliki ketertarikan besar pada desain antarmuka yang human-centered, serta bagaimana teknologi bisa menghadirkan solusi yang memudahkan kehidupan manusia.
 
-Keahlian saya mencakup desain UI/UX, pengembangan web, serta eksplorasi integrasi AI ke dalam sistem digital.
-``
+Dengan latar belakang di bidang desain dan pengembangan web, saya terbiasa bekerja dari tahap research, wireframing, UI prototyping, hingga implementasi frontend menggunakan teknologi modern seperti **React, Tailwind CSS, dan Next.js**. Saya percaya bahwa desain bukan hanya tentang tampilan, tapi juga tentang pengalaman dan empati terhadap pengguna.
+
+Beberapa bidang yang saya fokuskan:
+- Desain antarmuka aplikasi berbasis AI & accessibility
+- Website statis (landing page, company profile, dashboard)
+- Desain sistem (design tokens, component library)
+- Animasi interaktif & micro-interactions
+
+Di luar pekerjaan, saya suka belajar hal baru tentang AI, motion design, dan cara meningkatkan kolaborasi antara tim desain dan engineering. Saya terbuka untuk kerja kolaborasi, freelance, maupun proyek berdampak sosial.
+
+Tools & Stack: Figma, Framer, HTML5, CSS3, Tailwind CSS, Bootsrap, Javascript, React.js, Next.js, Git, Vercel.
+
+Mari berkolaborasi dan menciptakan pengalaman digital yang bermakna!

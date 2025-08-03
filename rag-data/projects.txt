@@ -1,14 +1,26 @@
 1. Butterfly AI (Customer Service Bot)
-   Sebuah fitur customer service berbentuk animasi kupu-kupu yang terintegrasi dengan AI, mampu menjawab pertanyaan user secara interaktif dan personal. Dibangun dengan Lottie, Next.js, dan Framer Motion.
+   Sebuah fitur customer service berbentuk animasi kupu-kupu yang terintegrasi dengan AI, mampu menjawab pertanyaan user secara interaktif dan personal. Dibangun dengan Lottie, Next.js, tailwindcss, Framer Motion dan menggunakan RAG.
 
 2. Karimunjawa App (UI/UX Mobile)
-   Aplikasi travel yang memberikan informasi seputar destinasi wisata Karimunjawa. Dibuat dengan pendekatan mobile-first UI dan berfokus pada kemudahan pengguna dalam merencanakan perjalanan.
+   Karimunjawa App adalah proyek UI/UX mobile yang dirancang untuk mempermudah wisatawan dalam menjelajahi Kepulauan Karimunjawa. Aplikasi ini bertujuan menjadi asisten digital wisatawan dengan fitur-fitur seperti informasi wisata, booking kapal, penginapan, itinerary, serta pemandu interaktif.
 
-3. Teman Isyarat
-   Aplikasi berbasis AI untuk menerjemahkan bahasa isyarat BISINDO ke teks atau suara. Menggunakan teknologi kamera dan machine learning untuk meningkatkan komunikasi antara tunarungu dan orang awam. Proyek ini berkontribusi pada SDG 10: Reduced Inequalities.
+3. WartegBot
+   WartegBot adalah chatbot berbasis Telegram yang dibangun menggunakan Java dan MySQL, dengan fitur pencarian respons otomatis berdasarkan kata kunci yang dikelola melalui antarmuka GUI CRUD. Proyek ini dirancang untuk membantu pengguna mendapatkan informasi secara cepat dan efisien dengan sistem sederhana namun fleksibel.
 
-4. WartegBot
-   Chatbot Telegram yang dikembangkan menggunakan Java dan MySQL. Dapat menjawab pertanyaan pengguna berdasarkan kata kunci dengan sistem CRUD berbasis GUI.
+4. Landing Page NFT WEB3 (UI/UX)
+   NFT WEB3 adalah proyek UI/UX design untuk sebuah platform berbasis Web3 yang berfokus pada jual beli aset NFT (Non-Fungible Token). Proyek ini dirancang untuk memberikan pengalaman pengguna yang intuitif, modern, dan responsif dalam menjelajahi, membeli, serta menjual NFT
 
-5. Website Portofolio
-   Dibuat menggunakan Next.js dan Tailwind CSS. Mempunyai layout responsif dan animasi halus, serta mencerminkan identitas personal sebagai desainer dan developer.
+5. SIAKAD Mobile App – UI/UX Design for Face Detection Attendance System
+   SIAKAD Mobile App adalah rancangan antarmuka sistem akademik digital yang memungkinkan mahasiswa dan dosen mengakses informasi akademik dan melakukan absensi secara otomatis menggunakan deteksi wajah. Aplikasi ini dirancang untuk meningkatkan efisiensi dan akurasi sistem kehadiran di lingkungan pendidikan tinggi.
+
+6. Furniture Landing Page
+   Merancang landing page elegan untuk brand furnitur yang ingin menampilkan produk unggulan, membangun kepercayaan pelanggan, dan mendorong pembelian melalui visual storytelling serta struktur UI yang bersih dan modern.
+
+7. Kokolaka Landing Page
+   Kokolaka adalah produk olahan kolang kaling yang ditujukan untuk anak muda dan masyarakat umum pecinta kolang kaling. Dalam program PPKO, saya merancang UI/UX landing page website untuk brand Kokolaka dengan tujuan memperkuat identitas merek secara digital dan menjangkau konsumen melalui pendekatan visual yang modern dan menggugah selera.
+
+8. Dashboard Sistem Seleksi Mahasiswa Unggulan – UI/UX Design
+   Proyek ini merupakan perancangan antarmuka dashboard untuk sistem seleksi mahasiswa unggulan, yaitu platform berbasis web yang dirancang khusus untuk membantu tim akademik dalam memantau, menilai, dan mengelola proses seleksi calon mahasiswa terbaik di institusi pendidikan. Desain dibuat dengan fokus pada kejelasan data, kemudahan navigasi, dan efisiensi penilaian.
+
+9. DiaCheck Web Dashboard – Sistem Pemantauan Kesehatan Diabetes
+   DiaCheck Dashboard adalah platform berbasis web yang dirancang untuk dokter, tenaga medis, dan admin sistem untuk memantau data kesehatan pengguna aplikasi DiaCheck. Dashboard ini menampilkan informasi penting seperti grafik kadar gula darah pasien, histori log makanan, catatan aktivitas, dan notifikasi kondisi kritis secara real-time.
