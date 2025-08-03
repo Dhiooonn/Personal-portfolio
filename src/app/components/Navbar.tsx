@@ -15,6 +15,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
