@@ -1,8 +1,9 @@
-import Image from "next/image";
 import Icons from "@/app/components/icons"; // icons
 import Navbar from "@/app/components/Navbar"; // Navbar
-import Butterfly from "@/app/components/customerService";
-import FadeInWhenVisible from "./components/Animasi/FadeInWhenVisible";
+import Butterfly from "@/app/components/customerService"; // customer service
+import FadeInWhenVisible from "./components/Animasi/FadeInWhenVisible"; // animasi fadeIn
+import AutoScrollSkillAnimation from "@/app/components/Skill"; // animasi icon sroll skill
+import ButtonLihatSelengkapnya from "./components/BtnLihatSelengkapnya";
 
 export default function Home() {
   return (
@@ -55,6 +56,19 @@ export default function Home() {
         </FadeInWhenVisible>
       </section>
 
+      {/* Skill Section */}
+      <section id="skill" className="flex flex-col gap-y-14 py-10">
+        <FadeInWhenVisible>
+          <h2 className="text-3xl font-bold font-fredoka lg:text-5xl text-center text-teal-500">
+            Skill
+          </h2>
+        </FadeInWhenVisible>
+
+        <FadeInWhenVisible>
+          <AutoScrollSkillAnimation />
+        </FadeInWhenVisible>
+      </section>
+
       {/* Works Section */}
       <section
         id="work"
@@ -88,25 +102,27 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <ButtonLihatSelengkapnya />
         </FadeInWhenVisible>
       </section>
 
       {/* Footer */}
       <footer
         id="contact"
-        className="bg-gray-800 px-4 lg:px-16 py-24 flex flex-col gap-y-12 lg:gap-y-16"
+        className="bg-gray-800 px-4 lg:px-16 py-24 flex flex-col gap-y-12 lg:gap-y-16 "
       >
         <div className="content-footer flex flex-col gap-y-8 lg:gap-y-12 lg:w-6xl">
-          <h2 className="font-fredoka font-bold font-white text-2xl lg:text-5xl lg:w-[750px]">
+          <h2 className="font-fredoka font-bold text-white text-2xl lg:text-5xl lg:w-[750px]">
             Interested in working together? Let’s connect
           </h2>
-          <p className="text-lg lg:text-3xl font-light font-poppins">
+          <p className="text-lg lg:text-3xl font-light font-poppins text-white">
             I’m open to freelance opportunities, collaborations, or just a
             friendly chat about design and development. Whether you have a
             project in mind or just want to say hi, feel free to reach out — I’d
             love to hear from you.
           </p>
-          <h2 className="font-fredoka font-bold font-white text-2xl lg:text-5xl">
+          <h2 className="text-white font-fredoka font-bold text-2xl lg:text-5xl">
             diondaman51@gmail.com
           </h2>
         </div>
