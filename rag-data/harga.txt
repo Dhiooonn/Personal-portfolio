@@ -1,24 +1,10 @@
-Price List – Jasa UI/UX Designer
-1. Basic UI/UX
-    Desain Basic (Mobile/Website), revisi terbatas
-    Rp 200.000 - 500.000
+Informasi harga yang tersedia adalah:
 
-2. Standar UI/UX
-    User flow, UI Design lengkap, revisi terbatas
-    500.000 - 1.000.000
+Jasa UI/UX Designer:
+- Basic UI/UX: Rp 200.000 - 500.000
+- Standar UI/UX: Rp 500.000 - 1.000.000
+- Premium UI/UX: Rp 1.000.000+
+- Landing Page Desain: Rp 500.000+
 
-3. Premium UI/UX
-    user flow, UI Design Lengakp + Prototyping, Revisi No limit
-    Rp 1.000.000+
-
-4. Landing Page Desain
-    1 halaman scroll, CTA, dan design responsive layout
-    Rp 500.000+
-
-Price List – Jasa Fronted Developer
-1. Landing Page Static
-    halaman website, responsive, Animasi
-    Rp 900.000+
-
-
-
+Jasa Frontend Developer:
+- Landing Page Static: Rp 900.000+
