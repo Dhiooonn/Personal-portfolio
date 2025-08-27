@@ -63,10 +63,10 @@ export default function ButterflyCS() {
           chatVisible
             ? { x: position.x, y: position.y } // Tidak animasi saat chatVisible true
             : {
-                x: position.x,
-                y: position.y,
-                rotate: [0, 5, -5, 0],
-              }
+              x: position.x,
+              y: position.y,
+              rotate: [0, 5, -5, 0],
+            }
         }
         transition={{ duration: 2, ease: "easeInOut" }}
         style={{
@@ -108,11 +108,10 @@ export default function ButterflyCS() {
                 {messages.map((msg, i) => (
                   <div
                     key={i}
-                    className={`px-2 py-1 rounded-md max-w-[90%] ${
-                      msg.from === "user"
-                        ? "bg-blue-500 text-white text-right self-end ml-auto"
-                        : "bg-gray-100 text-gray-950 text-left"
-                    }`}
+                    className={`px-2 py-1 rounded-md max-w-[90%] ${msg.from === "user"
+                      ? "bg-blue-500 text-white text-right self-end ml-auto"
+                      : "bg-gray-100 text-gray-950 text-left"
+                      }`}
                   >
                     {msg.text}
                   </div>
