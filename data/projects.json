@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Furniture Landing Page",
+        "category": "UI/UX Design",
+        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
+        "image": "",
+        "link": "https://www.figma.com/design/wkCcmf5jV719aHLl96Q8TB/Landing-Page---Design-Interior?node-id=0-1&t=RKOcoACWPW3CrGKZ-1"
+    },
+    {
+        "id": 2,
+        "title": "Kokolaka Landing page",
+        "category": "UI/UX Design",
+        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
+        "image": "/images/Furniture.webp",
+        "link": "1"
+    },
+     {
+        "id": 3,
+        "title": "NFT Web3 Landing Page",
+        "category": "UI/UX Design & Frontend Developer",
+        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
+        "image": "/images/NFT.webp",
+        "link": "1"
+    },
+    {
+        "id": 4,
+        "title": "Siakad",
+        "category": "UI/UX Design",
+        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
+        "image": "",
+        "link": "1"
+    },
+    {
+        "id": 5,
+        "title": "karimunjawa App",
+        "category": "UI/UX Design",
+        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
+        "image": "",
+        "link": "1"
+    },
+    {
+        "id": 6,
+        "title": "STI App",
+        "category": "UI/UX Design",
+        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
+        "image": "",
+        "link": "1"
+    }
+]

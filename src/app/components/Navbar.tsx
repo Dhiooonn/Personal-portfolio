@@ -15,7 +15,6 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -52,7 +51,7 @@ export default function Navbar() {
               {menuItems.map((label) => (
                 <li key={label}>
                   <Link
-                    href={`#${label.toLowerCase()}`}
+                    href={label === "HOME" ? "/" : `/#${label.toLowerCase()}`}
                     className="font-fredoka hover:text-white hover:bg-teal-500 px-4 py-2 rounded-xl transition-all duration-300"
                   >
                     {label}

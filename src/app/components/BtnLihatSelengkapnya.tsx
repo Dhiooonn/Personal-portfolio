@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ButtonLihatSelengkapnya({ href = '/projects/allProject' }) {
+export default function ButtonLihatSelengkapnya({ href = '/projects' }) {
   return (
     <Link href={href}>
       <motion.button

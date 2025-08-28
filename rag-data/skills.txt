@@ -1,6 +1,6 @@
 - UI/UX Design: Figma
 - Frontend: HTML, CSS, JavaScript, TypeScript
-- Frameworks: React.js, Next.js, Tailwind CSS, Bootsrap
+- Frameworks: Codeigniter, Astro.js, React.js, Next.js, Tailwind CSS, Bootsrap
 - Prototyping & Wireframing
 - Responsiveness & Accessibility (WCAG)
 - Design System & Style Guide
