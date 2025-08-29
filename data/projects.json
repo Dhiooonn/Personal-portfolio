@@ -4,47 +4,55 @@
         "title": "Furniture Landing Page",
         "category": "UI/UX Design",
         "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
-        "image": "",
+        "image": "/images/Furniture-2.webp",
         "link": "https://www.figma.com/design/wkCcmf5jV719aHLl96Q8TB/Landing-Page---Design-Interior?node-id=0-1&t=RKOcoACWPW3CrGKZ-1"
     },
     {
         "id": 2,
         "title": "Kokolaka Landing page",
         "category": "UI/UX Design",
-        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
-        "image": "/images/Furniture.webp",
+        "description": "Kokolaka Landing Page is a simple and modern UI/UX design created to promote processed kolang kaling products. The layout is clean, fresh, and fully responsive, ensuring ease of use on both desktop and mobile devices. With a natural look and feel, the website conveys a sense of health and eco-friendliness while strengthening Kokolaka’s image as a high-quality local brand.",
+        "image": "/images/Kokolaka-2.webp",
         "link": "1"
     },
      {
         "id": 3,
         "title": "NFT Web3 Landing Page",
         "category": "UI/UX Design & Frontend Developer",
-        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
-        "image": "/images/NFT.webp",
+        "description": "NFT Web3 Landing Page is a simple and modern UI/UX design to showcase NFT collections. The website is clean, responsive, and easy to use, providing a smooth experience for users to explore the world of Web3 and NFTs.",
+        "image": "/images/NFT-2.webp",
         "link": "1"
     },
     {
         "id": 4,
         "title": "Siakad",
         "category": "UI/UX Design",
-        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
-        "image": "",
+        "description": "Siakad App – Face Detector Attendance is a UI/UX design project for an academic system that simplifies attendance using face recognition technology. With a clean and modern interface, the app makes attendance faster, more accurate, and user-friendly for both students.",
+        "image": "/images/Siakad-2.webp",
         "link": "1"
     },
     {
         "id": 5,
         "title": "karimunjawa App",
         "category": "UI/UX Design",
-        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
-        "image": "",
+        "description": "Karimunjawa App is a UI/UX travel application design that helps travelers explore destination information, tour packages, and book accommodations in Karimunjawa. With a modern and user-friendly interface, the app provides a practical, informative, and enjoyable travel experience for users.",
+        "image": "/images/karimunjawa App-2.webp",
         "link": "1"
     },
     {
         "id": 6,
         "title": "STI App",
         "category": "UI/UX Design",
-        "description": "Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.",
-        "image": "",
+        "description": "STI App is a UI/UX design for an academic application that helps students find supervisors and track their thesis or research progress. With a simple interface and clear features, this app makes it easier for students to manage guidance sessions, communicate with lecturers, and efficiently monitor their academic progress.",
+        "image": "/images/STI App-2.webp",
+        "link": "1"
+    },
+    {
+        "id": 7,
+        "title": "DiaCheck",
+        "category": "UI/UX Design",
+        "description": "DiaCheck is a UI/UX design for a diabetes mentoring website that helps patients monitor their condition, consult with mentors, and learn healthy lifestyle habits. With a simple and user-friendly interface, DiaCheck makes it easier for patients to manage their daily health.",
+        "image": "/images/DiaCheck-2.webp",
         "link": "1"
     }
 ]

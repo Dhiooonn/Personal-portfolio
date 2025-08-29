@@ -1,5 +1,5 @@
-import Icons from "@/app/components/icons"; // icons
 import Navbar from "@/app/components/Navbar"; // Navbar
+import Footer from "@/app/components/Footer"; // Footer
 import Butterfly from "@/app/components/customerService"; // customer service
 import FadeInWhenVisible from "./components/Animasi/FadeInWhenVisible"; // animasi fadeIn
 import AutoScrollSkillAnimation from "@/app/components/Skill"; // animasi icon sroll skill
@@ -115,7 +115,7 @@ export default function Home() {
               {/* Right */}
               <div className="flex flex-col gap-6">
                 {/* Project 1 */}
-                <div className="relative group w-full h-[365px] bg-[url('/images/furniture.webp')] bg-cover bg-center rounded-2xl overflow-hidden">
+                <div className="relative group w-full h-[365px] bg-[url('/images/Furniture.webp')] bg-cover bg-center rounded-2xl overflow-hidden">
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-teal-500/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
@@ -160,29 +160,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer
-        id="contact"
-        className="bg-gray-800 px-4 lg:px-16 py-24 flex flex-col gap-y-12 lg:gap-y-16 "
-      >
-        <div className="content-footer flex flex-col gap-y-8 lg:gap-y-12 lg:w-6xl">
-          <h2 className="font-fredoka font-bold text-white text-2xl lg:text-5xl lg:w-[750px]">
-            Interested in working together? Let’s connect
-          </h2>
-          <p className="text-lg lg:text-3xl font-light font-poppins text-white">
-            I’m open to freelance opportunities, collaborations, or just a
-            friendly chat about design and development. Whether you have a
-            project in mind or just want to say hi, feel free to reach out — I’d
-            love to hear from you.
-          </p>
-          <h2 className="text-white font-fredoka font-bold text-2xl lg:text-5xl">
-            diondaman51@gmail.com
-          </h2>
-        </div>
-
-        <div className="social-icons">
-          <Icons />
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
