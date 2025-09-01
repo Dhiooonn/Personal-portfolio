@@ -60,9 +60,9 @@ npm run start
 
 ## ⚙️ Available Scripts
 -  ``` npm run dev ``` – start development server
-- npm run build – build project for production
-- npm run start – run production build
-- npm run lint – run ESLint check
+- ``` npm run build ``` – build project for production
+- ``` npm run start ``` – run production build
+- ``` npm run lint ``` – run ESLint check
 
 
 ## 🛠️ Tech Stack
