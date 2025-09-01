@@ -17,9 +17,7 @@ export default function AllProjects() {
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-10 sm:mb-14 text-center font-fredoka text-teal-500">
                         ALL PROJECTS
                     </h1>
-                </FadeInWhenVisible>
 
-                <FadeInWhenVisible>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto font-poppins">
                         {projects.map((project: Project) => (
                             <ProjectCard key={project.id} project={project} />
