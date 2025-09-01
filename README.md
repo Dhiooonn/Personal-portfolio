@@ -35,24 +35,24 @@ Portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS** t
 
 ## 🚀 Getting Started
 
-# 1. Clone Repository
+**1. Clone Repository**
 ```
 git clone https://github.com/Dhiooonn/Personal-portfolio.git
 cd Personal-portfolio
 ```
 
-# 2. Install Dependencies
+**2. Install Dependencies**
 ```
 npm install
 ```
 
-# 3. Run Development Server
+**3. Run Development Server**
 ```
 npm run dev
 ```
 Now open http://localhost:3000 in your browser.
 
-# 4. Build for Production
+**4. Build for Production**
 ```
 npm run build
 npm run start
@@ -79,8 +79,8 @@ Semua konten project dapat dikustomisasi lewat folder data/.
 
 
 ## 📬 Contact
-Author: Dhion Nur Damanhuri
-Portfolio: your-link.com
-Email: diondaman51@gmail.com
-LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/dhion-nur-damanhuri-2bb863275/)
+- Author: Dhion Nur Damanhuri
+- Portfolio: your-link.com
+- Email: diondaman51@gmail.com
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/dhion-nur-damanhuri-2bb863275/)
 
