@@ -6,15 +6,25 @@ import { motion } from "framer-motion";
 
 const Lottie = dynamic(() => import("./LottieFiles"), { ssr: false });
 
+type Message = {
+  from: "user" | "bot";
+  text: string;
+};
+
 export default function ButterflyCS() {
   const [position, setPosition] = useState({ x: 100, y: 100 });
   const [chatVisible, setChatVisible] = useState(false);
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState<Message[]>([
     { from: "bot", text: "Halo! Ada yang bisa saya bantu?" },
   ]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
+  /* ==============================
+   * BUTTERFLY RANDOM MOVE
+   * ============================== */
   useEffect(() => {
     if (!chatVisible) {
       const moveButterfly = () => {
@@ -22,35 +32,87 @@ export default function ButterflyCS() {
         const newY = Math.random() * (window.innerHeight - 150);
         setPosition({ x: newX, y: newY });
       };
+
       const interval = setInterval(moveButterfly, 5000);
       return () => clearInterval(interval);
     }
   }, [chatVisible]);
 
+  /* ==============================
+   * AUTO SCROLL CHAT
+   * ============================== */
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  /* ==============================
+   * SEND MESSAGE (WITH RETRY)
+   * ============================== */
   const sendMessage = async () => {
-    if (!input.trim()) return;
-    const response = await fetch("/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: input }),
-    });
+    if (!input.trim() || loading) return;
 
-    const data = await response.json();
+    const userText = input;
+    setInput("");
+    setLoading(true);
+
+    // tampilkan user message + placeholder bot
     setMessages((prev) => [
       ...prev,
-      { from: "user", text: input },
-      { from: "bot", text: data.reply },
+      { from: "user", text: userText },
+      { from: "bot", text: "⏳ Butterfly sedang mengetik..." },
     ]);
-    setInput("");
+
+    const fetchChat = async () => {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userText }),
+      });
+
+      if (!res.ok) {
+        throw new Error("API error");
+      }
+
+      return res.json();
+    };
+
+    try {
+      let data;
+      try {
+        // attempt pertama
+        data = await fetchChat();
+      } catch {
+        // retry sekali (warm-up Gemini)
+        data = await fetchChat();
+      }
+
+      // ganti placeholder dengan jawaban bot
+      setMessages((prev) => {
+        const updated = [...prev];
+        updated[updated.length - 1] = {
+          from: "bot",
+          text: data.reply,
+        };
+        return updated;
+      });
+    } catch (error) {
+      // gagal total
+      setMessages((prev) => {
+        const updated = [...prev];
+        updated[updated.length - 1] = {
+          from: "bot",
+          text: "Maaf, Butterfly sedang mengalami gangguan. Coba lagi ya 🦋",
+        };
+        return updated;
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <>
-      {/* Overlay to close chat */}
+      {/* Overlay untuk menutup chat */}
       {chatVisible && (
         <div
           className="fixed inset-0 z-40"
@@ -61,7 +123,7 @@ export default function ButterflyCS() {
       <motion.div
         animate={
           chatVisible
-            ? { x: position.x, y: position.y } // Tidak animasi saat chatVisible true
+            ? { x: position.x, y: position.y }
             : {
               x: position.x,
               y: position.y,
@@ -78,10 +140,11 @@ export default function ButterflyCS() {
         }}
       >
         <div className="relative pointer-events-auto">
+          {/* Butterfly */}
           <div
             className="cursor-pointer"
             onClick={(e) => {
-              e.stopPropagation(); // Hindari trigger overlay
+              e.stopPropagation();
               setChatVisible((prev) => !prev);
             }}
           >
@@ -92,7 +155,7 @@ export default function ButterflyCS() {
           {chatVisible && (
             <div
               className="absolute -top-48 -right-44 w-72 bg-white rounded-xl shadow-lg border p-3 z-50"
-              onClick={(e) => e.stopPropagation()} // Hindari overlay klik
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center text-xs font-semibold text-gray-700 mb-1">
                 <span>💬 Butterfly CS</span>
@@ -109,8 +172,8 @@ export default function ButterflyCS() {
                   <div
                     key={i}
                     className={`px-2 py-1 rounded-md max-w-[90%] ${msg.from === "user"
-                      ? "bg-blue-500 text-white text-right self-end ml-auto"
-                      : "bg-gray-100 text-gray-950 text-left"
+                        ? "bg-blue-500 text-white text-right ml-auto"
+                        : "bg-gray-100 text-gray-950 text-left"
                       }`}
                   >
                     {msg.text}
@@ -130,7 +193,9 @@ export default function ButterflyCS() {
                 />
                 <button
                   onClick={sendMessage}
-                  className="bg-blue-500 text-white px-2 py-1 rounded-md text-xs"
+                  disabled={loading}
+                  className={`px-2 py-1 rounded-md text-xs text-white ${loading ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"
+                    }`}
                 >
                   Kirim
                 </button>

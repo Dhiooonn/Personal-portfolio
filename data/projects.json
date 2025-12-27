@@ -13,7 +13,7 @@
         "category": ["uiux"],
         "description": "Kokolaka Landing Page is a simple and modern UI/UX design created to promote processed kolang kaling products. The layout is clean, fresh, and fully responsive, ensuring ease of use on both desktop and mobile devices. With a natural look and feel, the website conveys a sense of health and eco-friendliness while strengthening Kokolaka’s image as a high-quality local brand.",
         "image": "/images/Kokolaka-2.webp",
-        "link": "1"
+        "link": "https://www.figma.com/design/ZLuVG0WBUwKTq8tdGfgHdm/UI-Web---Kokolaka?node-id=0-1&t=fdFyRCRpzgwSglHK-1"
     },
      {
         "id": 3,
@@ -21,7 +21,7 @@
         "category": ["frontend"],
         "description": "NFT Web3 Landing Page is a simple and modern UI/UX design to showcase NFT collections. The website is clean, responsive, and easy to use, providing a smooth experience for users to explore the world of Web3 and NFTs.",
         "image": "/images/NFT-2.webp",
-        "link": "1"
+        "link": "https://web3-nft-two.vercel.app/"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "category": ["uiux"],
         "description": "Siakad App – Face Detector Attendance is a UI/UX design project for an academic system that simplifies attendance using face recognition technology. With a clean and modern interface, the app makes attendance faster, more accurate, and user-friendly for both students.",
         "image": "/images/Siakad-2.webp",
-        "link": "1"
+        "link": "https://www.figma.com/design/Ug5jKYvfh2b3Jy7xM1rVJN/Lomba-UI%2FUX-The-Ace---Team-DOMAMA?node-id=0-1&t=Z1hNjPwS9D6zbtYq-1"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "category": ["uiux"],
         "description": "Karimunjawa App is a UI/UX travel application design that helps travelers explore destination information, tour packages, and book accommodations in Karimunjawa. With a modern and user-friendly interface, the app provides a practical, informative, and enjoyable travel experience for users.",
         "image": "/images/Karimunjawa App-2.webp",
-        "link": "1"
+        "link": "https://www.figma.com/design/IZBcioIr84WgvHJADt0cTx/Lomba-UI-UX-HMDTI---Karimunjawa-Island-Apps?node-id=0-1"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "category": ["uiux"],
         "description": "STI App is a UI/UX design for an academic application that helps students find supervisors and track their thesis or research progress. With a simple interface and clear features, this app makes it easier for students to manage guidance sessions, communicate with lecturers, and efficiently monitor their academic progress.",
         "image": "/images/STI App-2.webp",
-        "link": "1"
+        "link": "https://www.figma.com/design/Ug5jKYvfh2b3Jy7xM1rVJN/Lomba-UI%2FUX-The-Ace---Team-DOMAMA?node-id=0-1&t=Z1hNjPwS9D6zbtYq-1"
     },
     {
         "id": 7,
@@ -53,6 +53,6 @@
         "category": ["uiux"],
         "description": "DiaCheck is a UI/UX design for a diabetes mentoring website that helps patients monitor their condition, consult with mentors, and learn healthy lifestyle habits. With a simple and user-friendly interface, DiaCheck makes it easier for patients to manage their daily health.",
         "image": "/images/DiaCheck-2.webp",
-        "link": "1"
+        "link": "https://www.figma.com/design/zART65ulMFX5ft1wfUJMaY/DiaCheck?node-id=0-1&t=FxamDb4quq7P1TZK-1"
     }
 ]

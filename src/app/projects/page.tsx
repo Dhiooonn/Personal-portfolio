@@ -29,7 +29,7 @@ export default function AllProjects() {
             <section className="max-w-6xl mx-auto pt-24 px-4 mb-12 sm:px-6">
                 {/* TITLE */}
                 <FadeInWhenVisible>
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-14 text-center font-fredoka text-teal-500">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-10 text-center font-fredoka text-teal-500">
                         ALL PROJECTS
                     </h1>
                 </FadeInWhenVisible>
@@ -41,7 +41,7 @@ export default function AllProjects() {
                             <button
                                 key={filter}
                                 onClick={() => setActiveFilter(filter)}
-                                className={`px-6 py-3 rounded-3xl border-2 text-lg font-semibold transition
+                                className={`px-6 py-3 rounded-3xl border-2 text-lg font-semibold transition cursor-pointer
                     ${activeFilter === filter
                                         ? "bg-teal-500 text-white border-teal-500"
                                         : "bg-white text-teal-500 hover:text-white border-teal-500 hover:bg-teal-500"

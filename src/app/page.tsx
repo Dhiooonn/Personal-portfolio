@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/app/components/Navbar"; // Navbar
 import Footer from "@/app/components/Footer"; // Footer
 import Butterfly from "@/app/components/customerService"; // customer service

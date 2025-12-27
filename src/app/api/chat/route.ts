@@ -1,20 +1,23 @@
-import { NextRequest, NextResponse } from "next/server";
-import { getGeminiReply } from "../../utils/gemini";
+export const runtime = "nodejs";
 
-export async function POST(req: NextRequest) {
-  const { message } = await req.json();
+import { NextResponse } from "next/server";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
+export async function POST() {
   try {
-    const reply = await getGeminiReply(message);
-    return NextResponse.json({ reply });
-  } catch (err: unknown) {
-    console.log("gemini error: ", err);
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) throw new Error("NO API KEY");
 
-    const errorMessage =
-      err instanceof Error
-        ? err.message
-        : String(err) || "Gagal mengambil respons dari Gemni";
+    const genAI = new GoogleGenerativeAI(apiKey);
 
-    return NextResponse.json({ error: errorMessage }, { status: 500 });
+    // PALING AMAN UNTUK AKUN BARU
+    const model = genAI.getGenerativeModel({ model: "models/gemini-pro" });
+
+    const result = await model.generateContent("Halo");
+    return NextResponse.json({ reply: result.response.text() });
+  } catch (err) {
+    console.error("🔥 GEMINI MINIMAL ERROR:");
+    console.error(err);
+    return NextResponse.json({ error: String(err) }, { status: 500 });
   }
 }
