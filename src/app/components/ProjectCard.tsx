@@ -1,11 +1,19 @@
 import { Project } from "@/types/project";
+import { map } from "framer-motion/client";
 
 export default function ProjectCard({ project }: { project: Project }) {
+    const categoryLabelMap: Record<string, string> = {
+        uiux: "UI/UX Design",
+        frontend: "Frontend Developer",
+    }
     return (
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between border-gray-100 border-2">
-            <span className="inline-block self-start bg-teal-500 text-white text-xl font-semibold px-6 py-3 rounded-xl mb-4">
-                {project.category}
-            </span>
+            {project.category.map((cat) => (
+                <span key={cat}
+                    className="inline-block self-start bg-teal-500 text-white text-xl font-semibold px-6 py-3 rounded-xl mb-4">
+                    {categoryLabelMap[cat]}
+                </span>
+            ))}
 
             <div className="w-full h-72 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
                 {project.image ? (
