@@ -6,6 +6,7 @@ import Butterfly from "@/app/components/customerService"; // customer service
 import FadeInWhenVisible from "./components/Animasi/FadeInWhenVisible"; // animasi fadeIn
 import AutoScrollSkillAnimation from "@/app/components/Skill"; // animasi icon sroll skill
 import ButtonLihatSelengkapnya from "./components/BtnLihatSelengkapnya"; // button lihat selengkapnya
+import ExperienceSection from "./components/ExperienceSection";
 
 export default function Home() {
   return (
@@ -58,6 +59,13 @@ export default function Home() {
         </FadeInWhenVisible>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience">
+        <FadeInWhenVisible>
+          <ExperienceSection />
+        </FadeInWhenVisible>
+      </section>
+
       {/* Skill Section */}
       <section id="skill" className="flex flex-col gap-y-14 py-10">
         <FadeInWhenVisible>
@@ -93,7 +101,6 @@ export default function Home() {
           {/* Project Showcase */}
           <div className="projectShowcase">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-6">
-
               {/* Left */}
               <div className="col-span-2">
                 <div className="relative group w-full h-[754px] bg-[url('/images/Mockup.webp')] bg-cover bg-center rounded-2xl overflow-hidden shadow-lg">
@@ -101,18 +108,24 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-teal-500/80 via-teal-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-2xl"></div>
 
                   {/* Text */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white 
+                  <div
+                    className="absolute bottom-0 left-0 right-0 p-6 text-white 
                     translate-y-6 opacity-0 
                     group-hover:translate-y-0 group-hover:opacity-100 
-                    transition-all duration-500 ease-in-out">
-                    <h3 className="text-5xl font-bold font-poppins">Dia Check</h3>
+                    transition-all duration-500 ease-in-out"
+                  >
+                    <h3 className="text-5xl font-bold font-poppins">
+                      Dia Check
+                    </h3>
                     <p className="text-base mt-2 text-gray-200 font-poppins">
-                      Dia Check is a health monitoring application designed to help users track their health conditions conveniently. The app features an interactive interface, is easy to understand, and provides a comfortable user experience.
+                      Dia Check is a health monitoring application designed to
+                      help users track their health conditions conveniently. The
+                      app features an interactive interface, is easy to
+                      understand, and provides a comfortable user experience.
                     </p>
                   </div>
                 </div>
               </div>
-
 
               {/* Right */}
               <div className="flex flex-col gap-6">
@@ -123,13 +136,21 @@ export default function Home() {
 
                   {/* Text */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white 
+                    <div
+                      className="absolute bottom-0 left-0 right-0 p-6 text-white 
                       translate-y-6 opacity-0 
                       group-hover:translate-y-0 group-hover:opacity-100 
-                      transition-all duration-500 ease-in-out">
-                      <h3 className="text-5xl font-bold font-poppins">Furniture</h3>
+                      transition-all duration-500 ease-in-out"
+                    >
+                      <h3 className="text-5xl font-bold font-poppins">
+                        Furniture
+                      </h3>
                       <p className="text-base mt-2 text-gray-200 font-poppins">
-                        Furniture is a UI/UX project with a modern minimalist concept that showcases furniture catalogs, exclusive collections, and interior design showcases. The design is responsive, clean, and easy to use to provide a comfortable shopping experience.
+                        Furniture is a UI/UX project with a modern minimalist
+                        concept that showcases furniture catalogs, exclusive
+                        collections, and interior design showcases. The design
+                        is responsive, clean, and easy to use to provide a
+                        comfortable shopping experience.
                       </p>
                     </div>
                   </div>
@@ -142,13 +163,21 @@ export default function Home() {
 
                   {/* Text */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white 
+                    <div
+                      className="absolute bottom-0 left-0 right-0 p-6 text-white 
                       translate-y-6 opacity-0 
                       group-hover:translate-y-0 group-hover:opacity-100 
-                      transition-all duration-500 ease-in-out">
-                      <h3 className="text-5xl font-bold font-poppins">NFT Web 3</h3>
+                      transition-all duration-500 ease-in-out"
+                    >
+                      <h3 className="text-5xl font-bold font-poppins">
+                        NFT Web 3
+                      </h3>
                       <p className="text-base mt-2 text-gray-200 font-poppins">
-                        NebulaNFT is a Web3 frontend project with a modern and responsive design to showcase and explore exclusive NFT collections. The website features an interactive interface, including artist, activity, and news pages, making it suitable as a digital asset showcase platform.
+                        NebulaNFT is a Web3 frontend project with a modern and
+                        responsive design to showcase and explore exclusive NFT
+                        collections. The website features an interactive
+                        interface, including artist, activity, and news pages,
+                        making it suitable as a digital asset showcase platform.
                       </p>
                     </div>
                   </div>
